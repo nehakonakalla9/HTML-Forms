@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>College Application Form</h1>
+    <form action="submit" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name ="password" required>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="iit-score">IIT-Score</label>
+            <select id="iit-score" name="iit-score">
+                <option value="100-90">100-90</option>
+                <option value="90-80">90-80</option>
+                <option value="80-70">80-70</option>
+                <option value="70-60">70-60</option>
+                <option value="60-50">60-50</option>
+            </select>
+        </div>
+        <div>
+            <label for="eng1">1st Preference of Engineering:</label>
+            <select id="eng1" name="eng1">
+                <option value="computer">Computer Science</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="electrical">Electrical</option>
+                <option value="civil">Civil</option>
+                <option value="chemical">Chemical</option>
+            </select>
+        </div>
+        <div>
+            <label for="eng2">2nd Preference of Engineering:</label>
+            <select id="eng2" name="eng2">
+                <option value="computer">Computer Science</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="electrical">Electrical</option>
+                <option value="civil">Civil</option>
+                <option value="chemical">Chemical</option>
+            </select>
+        </div>
+        <div>
+            <label for="board">Board of Examination:</label>
+            <select id="board" name="board">
+                <option value="CBSE">CBSE</option>
+                <option value="ICSE">ICSE</option>
+                <option value="State">State Board</option>
+                <option value="IB">IB</option>
+            </select>
+        </div>
+        <div>
+            <label for="comments">Leave a Comment:</label>
+            <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
